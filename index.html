@@ -12,8 +12,10 @@
     />
     <link href="index.css" type="text/css" rel="stylesheet" />
     <title>Delani Studio</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   </head>
   <body>
+    <!--adding container for about us section!--> 
     <div class="contaier-fluid">
       <img src="assets/backgrounds/h_img.jpg" class="img-fluid" alt="" />
       <div class="container">
@@ -22,6 +24,7 @@
       <p>Our project unifies design, development and product management to create exceptional products.</p>
       <p>We start each project by understanding your business  goals, the user's needs and the product requirements. </p>
       <p>Then we help translate them into efective and elegant solutions.</p></div>
+      <!--adding container for SERVICES section-->
       <div class="container-fluid">
           <img src="assets/backgrounds/s_image.jpg" class="img-fluid" alt="">
           <div class="services">
@@ -31,36 +34,49 @@
             <p>Based on your requirements,we can provoide a complete offering or just the piece you need.</p>
           </div>
       </div>
+      <!--What we do-->
       <div class="container-fluid">
         <div class="container">
             <div class="row row-cols-auto">
-              <div class="col">Column</div>
-              <div class="col">Column</div>
-              <div class="col">Column</div>
+              <div class="col-md-2">
+                <div class="card text-centered"><img src="assets/services_icons/design_icon.png"></div>
+                <div class="card-body">
+                  <div ><h5 class="card-title">Design</h5>
+
+                <p class="card-text">Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing. Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.</p></div>
+              <div class="col"><img src="assets/services_icons/dev_icon.png">Development
+
+                All engineers are fluent in the latest enterprise, mobile and web development technologies. They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.
+                
+                </div>
+              <div class="col"><img src="assets/services_icons/product_icon.png">Product Management
+
+                Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve.</div>
             </div>
         </div>
-
+<!--cards section-->
       <div class="container-fluid">
         <div class="container">
-            <div class="row row-cols-auto">
-              <div class="col">Column</div>
-              <div class="col">Column</div>
-              <div class="col">Column</div>
-              <div class="col">Column</div>
+            <div class="row row-cols-4">
+              <div class="col"><img src="assets/portfolio/work4.jpg" alt=""></div>
+              <div class="col"><img src="assets/portfolio/work2.jpg" alt=""></div>
+              <div class="col"><img src="assets/portfolio/work3.jpg" alt=""></div>
+              <div class="col"><img src="assets/portfolio/work1.jpg" alt=""></div>
 
 
             </div>
-            <div class="row row-cols-auto">
-                <div class="col">Column</div>
-                <div class="col">Column</div>
-                <div class="col">Column</div>
-                <div class="col">Column</div>
+            <div class="row row-cols-4">
+                <div class="col"><img src="assets/portfolio/work5.jpg" alt=""></div>
+                <div class="col"><img src="assets/portfolio/work6.jpg" alt=""></div>
+                <div class="col"><img src="assets/portfolio/work7.jpg" alt=""></div>
+                <div class="col"><img src="assets/portfolio/work8.jpg" alt=""></div>
             </div>
         
       </div>
+      <!--form section-->
       <div class="container-fluid">
               <img src="assets/backgrounds/c_image.jpg" class="img-fluid" alt="">
-              <form>
+              <form id="target">
                 <div class="form-row">
                   <div class="col">
                     <input type="text" class="form-control" placeholder="First name">
@@ -70,11 +86,12 @@
                   </div>
                   <div class="form-row">
                       <div class="col">
-                    <input type="text" class="form-control" placeholder="Write Message"> 
+                    <input type="text" class="form-control" placeholder="Write Message">
+                    <input id="" type="submit" value="submit"> 
                 </div>
-                  </div>
                 </div>
               </form>
       </div>
+      <script src="index.js"></script>
   </body>
 </html>
